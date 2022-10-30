@@ -1,0 +1,116 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing:border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: grid;
+    /*grid-template-columns: 30% 20% 50%;*/
+    /*grid-template-columns: 1fr 2fr 1fr;*/
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 10px;
+    background-color: black;
+    color: white;
+    grid-column: 1 /13;
+    height: 60px;
+}
+
+.logo {
+    grid-column: 1 / 2; 
+    height: 70px;
+}
+
+.logo img{
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav {
+    grid-column: 10 /13;
+}
+nav ul{
+    display: flex;
+    justify-content: end;
+}
+
+nav li {
+    font-size: larger;
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+    margin: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease 0s;
+}
+
+nav a:hover {
+    color: #b2dfdb;
+}
+
+.background {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    background: #79031D;
+}
+
+.center {
+    background-image: url('../image/Gym-PNG-Free-Download\ 1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    grid-column: 5 / 10;
+    grid-row: 2 / 8;
+    color: white;  
+}
+
+.words h1 {
+    font-size: 100px;
+}
+
+.words p {
+    font-size: 40px;
+}
+
+button {
+    background-color: #EDB518;
+    border: none;
+    color: #79031D;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    grid-column: 8 /13;
+    grid-row: 1 / 1;
+    border-radius: 15px;
+    height: 70px;
+  }
+
+.button-container {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-auto-rows: minmax(100px, auto);
+  }
+
+button a {
+    text-decoration: none;
+    color: #79031D;
+    transition: all 0.3s ease 0s;
+}
+
+button a:hover {
+    color: white;
+}
